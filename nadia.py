@@ -1,17 +1,24 @@
-
 import turtle
+__import__('turtle').__traceable__= False
 
-def draw_square(t, sz):
-    """Make turtle t draw a square of sz."""
-    for i in range(4):
+def square_draw(t,sz):
+    for i in ['red', 'blue','purple', 'yellow']:
+        t.color(i)
         t.forward(sz)
         t.left(90)
 
+wn = turtle.Screen()
+wn.bgcolor('lightblue')
+wn.title('Hey Turtle!')
 
-wn = turtle.Screen()        # Set up the window and its attributes
-wn.bgcolor("green")
-wn.title("Alex meets a function")
+max = turtle.Turtle()
+max.pensize(2)
 
-alex = turtle.Turtle()      # Create alex
-draw_square(alex, 50)       # Call the function to draw the square
-wn.mainloop()
+size = 20
+
+for i in range(15):
+    square_draw(max, size)
+    size = size + 10
+    max.forward(10)
+    max.left(18)
+wn.mainloop()    
