@@ -1,16 +1,8 @@
- import turtle
+def final_amt(p, r, n, t):
+    
+    a = p * (1+ r/n) ** (n*t)
+    return a
 
- def draw_square(t, sz):
-     """Make turtle t draw a square of sz."""
-     for i in range(4):
-         t.forward(sz)
-         t.left(90)
-
-
- wn = turtle.Screen()        # Set up the window and its attributes
- wn.bgcolor("lightgreen")
- wn.title("Alex meets a function")
-
- alex = turtle.Turtle()      # Create alex
- draw_square(alex, 50)       # Call the function to draw the square
- wn.mainloop()
+toInvest = float(input('How much you wanna invest?'))
+fnl= final_amt(toInvest, 0.08, 12, 5)
+print('At the end of the period you will have', fnl)
