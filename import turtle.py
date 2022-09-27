@@ -1,4 +1,6 @@
+import tkinter
 import turtle
+
 
 def square_man(t,x):
     for i in range (4):

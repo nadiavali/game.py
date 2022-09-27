@@ -1,4 +1,4 @@
-
+import tkinter
 import turtle
 
 def square_drawing(t,s):

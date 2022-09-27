@@ -1,3 +1,4 @@
+import tkinter as tk
 import turtle
 
 def make_window(colr,ttl):

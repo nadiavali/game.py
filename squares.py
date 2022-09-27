@@ -1,6 +1,5 @@
-import turtle
-__import__('turtle').__traceable__= False
 
+import turtle
 def square_draw(t,sz):
     for i in ['red', 'blue','purple', 'yellow']:
         t.color(i)
